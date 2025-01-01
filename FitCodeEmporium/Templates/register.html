@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/inputField.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accentColor: "#E83046",
+                        text: "#ffffff",
+                        background1: "#2c2c2c",
+                        background2: "#1E1E1E",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="icon" href="Images/favicon-biceps-fill.png">
+    <title>Register</title>
+</head>
+<body class="bg-background1 font-[poppins]">
+    <div class="content-wrapper-body max-w-[800px] mx-auto">
+        <style>
+            .register-container {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+        <div class="register-container bg-background2 grid grid-cols-2 w-[800px] mx-auto rounded-xl shadow-2xl">
+            <div class="register-image-container">
+                <img class="register-image h-full object-cover rounded-tl-xl rounded-bl-xl" src="../static/images/How-Three-Personal-Trainers-Dress-for-the-Gym-Gear-Patrol-mat.jpg" alt="">
+            </div>
+            <div class="register-main px-8 py-12">
+                <div class="register-title text-text text-center text-5xl mb-6">Register</div>
+                <div class="register-subtitle text-text text-center text-xs mb-6">Join us to start your fitness journey today!</div>
+                <div class="form__div mt-5">
+                    <input type="text" class="form__input" placeholder=" " required>
+                    <label for="name" class="register-name form__label">Name</label>
+                </div>
+                <div class="form__div mt-5">
+                    <input type="text" class="form__input" placeholder=" " required>
+                    <label for="username" class="register-username form__label">Username</label>
+                </div>
+                <div class="form__div mt-5">
+                    <input type="email" class="form__input" placeholder=" " required>
+                    <label for="email" class="register-email form__label">Email</label>
+                </div>
+                <div class="form__div mt-5">
+                    <input type="password" class="form__input" placeholder=" " required>
+                    <label for="password" class="register-password form__label">Password</label>
+                </div>
+                <div class="register-button-container">
+                    <button class="register-button bg-accentColor w-full text-text rounded-lg px-3 py-3 mb-4 duration-200 hover:bg-white hover:text-black">Register</button>
+                </div>
+                <div class="register-register-container text-text text-xs flex flex-col justify-end text-end">
+                    <div class="register-got-an-account px-4 mb-1">Already have an account?</div>
+                    <a class="register-login-link px-4 underline hover:no-underline" href="login.html">Login here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

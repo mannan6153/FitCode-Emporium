@@ -1,0 +1,105 @@
+/* CSS file: contactus.css */
+
+:root {
+    --darkened-bg: #333;
+    --header-link-color: #e74c3c;
+    --body-bg: #222;
+    --hairline-color: #555;
+    --input-bg: #444;
+    --input-text-color: #fff;
+    --input-border-color: #555;
+    --button-bg: #e74c3c;
+    --button-text-color: #fff;
+    --button-hover-bg: #c0392b;
+}
+
+body.contact {
+    font-family: Arial, sans-serif;
+    background-color: var(--darkened-bg);
+    color: var(--input-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header#header {
+    background-color: var(--header-link-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header#header h1 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+main#content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+div#container {
+    background: var(--body-bg);
+    border: 1px solid var(--hairline-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 28em;
+    min-width: 300px;
+    text-align: center;
+}
+
+#container h2 {
+    color: var(--header-link-color);
+    margin-bottom: 10px;
+}
+
+#container p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.contact .form-row {
+    padding: 4px 0;
+    text-align: left;
+}
+
+.contact .form-row label {
+    display: block;
+    line-height: 2em;
+    color: var(--input-text-color);
+}
+
+.contact .form-row input,
+.contact .form-row textarea {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--input-bg);
+    color: var(--input-text-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact .submit-row {
+    padding: 1em 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact .form__button {
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+}
+
+.contact .form__button:hover {
+    background-color: var(--button-hover-bg);
+}

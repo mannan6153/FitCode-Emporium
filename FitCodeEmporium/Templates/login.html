@@ -1,0 +1,70 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/inputField.css">
+    <style>
+        :root {
+            --accent-color: #E83046;
+            --text-color-black: #949ba4;
+            --text-color-white: #ffffff;
+            --background-color1: #2c2c2c;
+            --background-color2: #1E1E1E;
+        }
+    </style>
+    <link rel="icon" href="Images/favicon-biceps-fill.png">
+    <title>Login - Online Fitness Store</title>
+</head>
+<body class="bg-[var(--background-color1)] font-[poppins]">
+    <div class="content-wrapper-body max-w-[800px] mx-auto">
+        <style>
+            .login-container {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        </style>
+        <div class="login-container bg-[var(--background-color2)] grid grid-cols-2 w-[800px] mx-auto rounded-xl shadow-2xl">
+            <div class="login-image-container">
+                <img class="login-image h-full object-cover rounded-tl-xl rounded-bl-xl" src="{{login.img.url}}" alt="">
+            </div>
+            <div class="login-main px-8 py-12">
+                <div class="login-title text-[var(--text-color-white)] text-center text-5xl mb-6">Login</div>
+                <div class="login-subtitle text-[var(--text-color-white)] text-center text-xs mb-6">Welcome back! Please log in to access your fitness journey and personalized plans.</div>
+                <div class="form__div mt-5">
+                    <input type="email" class="form__input" placeholder=" " required>
+                    <label for="email" class="login-email form__label">Email</label>
+                </div>
+                <div class="form__div mt-5">
+                    <input type="password" class="form__input" placeholder=" " required>
+                    <label for="password" class="login-password form__label">Password</label>
+                </div>
+                <div class="login-button-container">
+                    <button class="login-button bg-[var(--accent-color)] w-full text-[var(--text-color-white)] rounded-lg px-3 py-3 mb-4 duration-200 hover:bg-white hover:text-black">Login</button>
+                </div>
+                <div class="login-remember-me-forgot-password-container text-[var(--text-color-white)] accent-[var(--accent-color)] mb-5 flex justify-between">
+                    <div class="login-radio-button flex justify-center items-center">
+                        <input type="checkbox" class="remember-me" checked>
+                        <label for="remember-me" class="text-xs pl-2">Remember me</label>
+                    </div>
+                    <a class="login-forgot-password text-[var(--text-color-white)] text-xs underline hover:no-underline" href="#">Forgot password?</a>
+                </div>
+                <div class="login-or-section-container flex justify-center align-center relative h-5">
+                    <hr class="w-full">
+                    <div class="login-or-section text-[var(--text-color-white)] bg-[var(--background-color2)] px-2 absolute left-auto right-auto bottom-2">or</div>
+                </div>
+                <div class="login-new-account text-[var(--text-color-white)] text-xs">Create an account <a class="login-new-account-link underline hover:no-underline" href="register.html" target="_blank">here</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

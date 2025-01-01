@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        accentColor: "#E83046",
+                        text: "#ffffff",
+                        background1: "#2c2c2c",
+                        background2: "#1E1E1E",
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Blog Page</title>
+</head>
+<body class="bg-background1 font-[poppins] h-[100vh] text-text overflow-x-hidden">
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- NAVBAR -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="nav-container bg-gradient-to-b from-background1 to-[#ffffff00] sticky top-0 h-[60px] p-[16px] z-[20] font-sans">
+        <div class="content-wrapper-nav max-w-[896px] h-full mx-auto flex justify-between items-center">
+            <div class="nav-logo font-extrabold text-white transition-[5s] hover:text-accentColor">GYM-LOGO</div>
+            <div class="nav-links-container flex relative left-[30px]">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Home</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Shop</button>
+                <button class="nav-login text-accentColor text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Blog</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[2px] rounded-md transition-[5s] hover:text-accentColor">Contact Us</button>
+            </div>
+            <div class="nav-right flex items-center gap-3">
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] hover:bg-accentColor hover:text-white">Login</button>
+                <button class="nav-login text-white text-[15px] font-medium px-[10px] py-[4px] rounded-md transition-[5s] bg-accentColor hover:bg-[#ffffff00] hover:text-white">Join Us</button>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- BLOG-MAIN -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="blog-main-container">
+        <div class="blog-main-wrapper max-w-[896px] mx-auto rounded-lg bg-background2 p-5 mb-5 mt-10">
+            <div class="blog-image-container">
+                <img class="blog-image rounded-lg mb-3 h-[350px] object-cover mx-auto" src="../static/images/loss fat.jpg" alt="Lose Fat">
+            </div>
+            <div class="blog-title text-[40px] text-accentColor font-bold mb-3">How to Lose Fat Quickly and Safely</div>
+            <div class="blog-text text-sm font-light leading-7">
+                <p>Struggling with stubborn fat? You're not alone. Discover effective strategies to lose fat safely and sustainably.</p>
+                <p>Start by making small changes to your diet. Opt for whole foods over processed ones, and include plenty of lean protein, vegetables, and healthy fats. Remember, it's not about drastic measures, but consistent, healthy choices.</p>
+                <p>Regular exercise is key. Incorporate a mix of cardio and strength training into your routine to maximize fat loss and build muscle. Aim for at least 30 minutes of moderate exercise most days of the week.</p>
+                <p>Hydration plays a crucial role in fat loss. Drink plenty of water throughout the day to keep your metabolism running smoothly and help you feel full, reducing the chances of overeating.</p>
+                <ul class="list-disc ml-5 mt-4">
+                    <li>Eat balanced, nutritious meals</li>
+                    <li>Engage in regular physical activity</li>
+                    <li>Stay hydrated</li>
+                    <li>Get adequate sleep</li>
+                    <li>Manage stress effectively</li>
+                </ul>
+                <p>Consistency is key. Remember, sustainable weight loss is a marathon, not a sprint. Stay committed to your goals, and the results will follow.</p>
+                <p>For more personalized advice, consider consulting with a fitness professional or a registered dietitian. They can provide tailored recommendations based on your individual needs and goals.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
